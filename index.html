@@ -12,7 +12,10 @@
 			margin: 2em auto;
 			padding: 0 1em;
 			line-height: 1.6;
+			display: block;
+			text-align: center;
 		}
+		
 		img { max-width: 100%; height: auto; }
 		pre { background-color: #f4f4f4; padding: 1em; overflow-x: auto; }
 		code { font-family: monospace; }
@@ -31,11 +34,19 @@ body {
 height: 100%;
 }
 
+img {
+	width: 40%;
+	height: auto
+}
 body {
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+img {
+	width: 40%;
+	height: auto
 }
 main {
 height: 100%;
@@ -45,7 +56,8 @@ flex-direction: column;
 align-items: flex-end;
 }
 </style>
-<h1>hello world</h1>
+<h1>Nature of Code</h1>
+<img src="sandwassermuster.jpg" alt="photo of the patters in the sand caused by the waves">	
 <main>
 <div id="sketch"></div>
 <script src="lib/p5.min.js"></script>
